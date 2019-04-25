@@ -3,64 +3,256 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+* {
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin-bottom: 60px;
+  width: 100%;
+  opacity: 0.9;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+  background-color: gray;
+}
+nav ul {
+  margin: 20px;
+}
+nav ul li {
+  padding-top: 15px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+nav ul li:hover {
+  background-color: black;
+  color: yellow;
+  font-size: 20px;
+  border: 2px solid yellow;
+  border-radius: 1em;
+}
+nav ul li#nav-logo {
+  float: right;
+}
+nav ul li#nav-logo:hover {
+  background-color: blue;
+}
+.logo {
+  display: inline-block;
+  right: 5%;
+}
+nav a {
+  margin: 7px;
+  padding: 0px 15px;
+  text-decoration: none;
+  color: rgb(214, 197, 197);
+}
+main {
+  z-index: 0;
+}
+div#intro {
+  margin-bottom: 10%;
+}
+
+#intro div {
+  width: 48%;
+  display: inline-block;
+}
+.intro-left {
+  text-align: center;
+  font-size: 35px;
+  margin: auto;
+}
+.intro-right {
+  margin: auto;
+}
+button {
+  padding: 10px 25px;
+  top: 0;
+  background-color: white;
+  border: 2px solid;
+}
+button:hover {
+  background-color: blue;
+  border-radius: 2em;
+}
+.two-clmn {
+  display: inline-block;
+  width: 49%;
+  padding: 30px;
+}
+.three-clmn {
+  display: inline-block;
+  width: 33%;
+  padding: 15px;
+}
+.middle-img {
+  width: 100%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+address {
+  padding: 20px;
+}
+#cpyrght {
+  text-align: center;
+}
+#new-font {
+  font-family: 'Montserrat', sans-serif;
+}
